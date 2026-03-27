@@ -10,18 +10,19 @@
   <null name="shutdown_services"/>
   <null name="replication_services"/>
   <record name="requires" javaclass="com.wm.util.Values">
+    <value name="Punith_KMAT_Salesforce_Sync">1.0</value>
   </record>
   <null name="lazy_load_node_types"/>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">7</value>
+  <value name="build">8</value>
   <null name="description"/>
   <value name="created_date">25-03-2026 19:08:09 GMT</value>
   <null name="extendedProperties"/>
   <null name="target_server_version"/>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2026-03-27T09:20:58.420134005Z</value>
+  <value name="lastUpdated">2026-03-27T09:22:43.66408097Z</value>
   <value name="wmProjectId">flacc3d82af9da4f95a9d32e0e0c7da089</value>
   <value name="creator">Sabreen Irfana</value>
 </Values>
