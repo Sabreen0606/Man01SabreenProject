@@ -3,7 +3,7 @@ info:
   model: int-scaffold
 packages:
 - name: Man01SabreenProject
-  gitServerName: Adapters
+  gitServerName: Meer_SH
   gitUrl: https://github.com/Sabreen0606
-  gitUsername: Sephali-Smrutisikha-IBM-1
+  gitUsername: Meer-Arfath-IBM
   gitBranch: main
