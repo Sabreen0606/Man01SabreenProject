@@ -3,6 +3,7 @@ info:
   model: int-scaffold
 packages:
 - name: Punith_KMAT_Salesforce_Sync
+  version: "1.0"
   gitServerName: Karthik
   gitUrl: https://github.com/karthikbm
   gitUsername: karthikbm
@@ -12,3 +13,98 @@ packages:
   gitUrl: https://github.com/Sabreen0606
   gitUsername: Meer-Arfath-IBM
   gitBranch: main
+- name: WmSalesforceProvider
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: supported
+services:
+- serviceName: project.man01sabreen.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.connections:TestSF1
+  packages:
+  - name: Man01SabreenProject
+    version: "1.0"
+  - name: Punith_KMAT_Salesforce_Sync
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
+configurationVariables:
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.poolable
+  : "true"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.pr.useExpectCont
+  : "false"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.pr.followServerRedirects
+  : "true"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.tcpNoDelay
+  : "false"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.hostnameVerifier
+  : org.apache.http.conn.ssl.DefaultHostnameVerifier
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.pr.protocolVersion
+  : HTTP/1.1
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cr.preemptiveAuthEnabled
+  : "false"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.pr.useChunking
+  : "false"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.poolIncrementSize
+  : "1"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.pr.serverRedirectMax
+  : "5"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.maximumPoolSize
+  : "10"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.socketLinger
+  : "-1"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.rh.requestHeaderNames
+  : "Content-Type,SOAPAction"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.retryIfRequestSentOk
+  : "true"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.connectionEnabled
+  : "true"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.startupBackoffSecs
+  : "10"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.providerUrl
+  : https://login.salesforce.com/services/Soap/u/53.0
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cr.authSchemeType
+  : none
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.connectTimeout
+  : "180000"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.pr.httpContentCharSet
+  : ISO-8859-1
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.pr.userAgent
+  : Cloudstreams
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.blockTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cr.password
+  : "{AES}OYSjbNfOLUKJAT+MWJt0w3FPbUooYAcCzhGF0UMKgsfxDQ1MMLJvU+e5tmiaXP+/"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.retryCount
+  : "3"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.enableCompression
+  : "false"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.enableSNI
+  : "true"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.validateAfterInactivity
+  : "1000"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.expireTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.pr.allowCircularRedirects
+  : "true"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.socketStaleCheck
+  : "true"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.keepAliveInterval
+  : "300000"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.startupRetryCount
+  : "0"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.rh.requestHeaderValues
+  : "text/xml,login"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.sockBuffSize
+  : "8192"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.reuseAddr
+  : "false"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.minimumPoolSize
+  : "1"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.sessionExpiry
+  : "14"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.timeoutType
+  : fixed
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cr.username
+  : rithi@softwareag.com
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.readTimeout
+  : "180000"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.idleTimeout
+  : "-1"
