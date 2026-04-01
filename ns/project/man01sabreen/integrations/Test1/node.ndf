@@ -45,9 +45,8 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="createdBy">Sabreen.Irfana@ibm.com</value>
-    <value name="createdDate">1775031642803</value>
-    <value name="lastModifiedDate">1775031642803</value>
+    <value name="lastModifiedBy">Sabreen.Irfana@ibm.com</value>
+    <value name="lastModifiedDate">1775032627184</value>
     <value name="displayName">Test1</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -61,7 +60,7 @@
         <value name="name">Salesforce® CRM SOAP</value>
         <value name="itemType">APPS</value>
         <record name="operation" javaclass="com.wm.util.Values">
-          <value name="operationName">TestAction1</value>
+          <value name="operationName">TestAction5</value>
           <value name="isCustom">true</value>
           <value name="operationType">actions</value>
           <value name="connectionType">sagcloud</value>
@@ -109,6 +108,7 @@
         <array name="outputMap" type="object" depth="1" javaclass="java.lang.Object">
         </array>
         <Boolean name="accountReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">0</value>
       </record>
     </record>
   </record>
