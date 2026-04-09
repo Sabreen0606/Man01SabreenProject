@@ -4,6 +4,7 @@
         <servicesKeys>
             <keyDetails collectionKey="project.man01sabreen.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.operations.actions:TestAction1" connectorServiceName="project.man01sabreen.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.operations.actions:TestAction1"/>
             <keyDetails collectionKey="project.man01sabreen.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.operations.actions:TestAction5" connectorServiceName="project.man01sabreen.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.operations.actions:TestAction5"/>
+            <keyDetails collectionKey="project.man01sabreen.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.operations.actions:TestAction8" connectorServiceName="project.man01sabreen.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.operations.actions:TestAction8"/>
         </servicesKeys>
     </cloudstreamsCollectionKeys>
 </services>
