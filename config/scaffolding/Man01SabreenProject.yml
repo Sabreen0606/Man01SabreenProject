@@ -46,6 +46,18 @@ services:
     version: "1.0"
   - name: WmSalesforceProvider
     version: 12.0.0.0.17
+- serviceName: project.man01sabreen.Man01SabreenProject.project_man01sabreen_Man01SabreenProject_UberRest1.connections:TestRc3
+  packages:
+  - name: Man01SabreenProject
+    version: "1.0"
+  - name: WmCloudStreams
+    version: 12.1.0.0.43
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: Punith_KMAT_Salesforce_Sync
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
 - serviceName: project.man01sabreen.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.connections:TestSC3
   packages:
   - name: Man01SabreenProject
@@ -135,64 +147,36 @@ services:
   - name: WmSalesforceProvider
     version: 12.0.0.0.17
 configurationVariables:
-  ? iscloudstreamsconnectorservice.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..operations..actions:TestAction1.virtualServiceName
-  : WmCloudStreams.SoapVS
   ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.cn.socketStaleCheck
   : "true"
   ? iscloudstreamsconnectorservice.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..operations..actions:TestAction5.connectionAlias
   : project.man01sabreen.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.connections:TestSF1
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.cn.socketLinger
-  : "-1"
   ? iscloudstreamsconnectorservice.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..operations..actions:TestAction8.connectionAlias
   : project.man01sabreen.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.connections:TestSF1
-  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.cn.reuseAddr
-  : "false"
-  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.connectionEnabled
-  : "true"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.cn.idleTimeout
+  : "-1"
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.cn.hostnameVerifier
   : org.apache.http.conn.ssl.DefaultHostnameVerifier
-  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.cn.hostnameVerifier
-  : org.apache.http.conn.ssl.DefaultHostnameVerifier
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.blockTimeout
-  : "1000"
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.startupRetryCount
   : "0"
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.cn.retryIfRequestSentOk
-  : "true"
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.poolIncrementSize
-  : "1"
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.cn.validateAfterInactivity
-  : "1000"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.maximumPoolSize
+  : "10"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.cn.providerUrl
+  : https://api.uber.com/v1
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.timeoutType
+  : none
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.socketLinger
   : "-1"
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.startupBackoffSecs
-  : "10"
-  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.cr.username
-  : asa
-  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.cr.username
-  : sds
-  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.connectionEnabled
-  : "true"
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.blockTimeout
   : "1000"
-  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.cn.reuseAddr
-  : "false"
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.pr.useExpectCont
   : "false"
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.enableSNI
   : "true"
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.expireTimeout
-  : "1000"
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.pr.allowCircularRedirects
   : "true"
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.cn.keepAliveInterval
-  : "300000"
-  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.cn.validateAfterInactivity
-  : "1000"
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.rh.requestHeaderValues
-  : "text/xml,login"
-  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.minimumPoolSize
-  : "1"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.poolable
+  : "true"
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.minimumPoolSize
   : "1"
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.poolable
@@ -201,22 +185,16 @@ configurationVariables:
   : "true"
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.poolable
   : "true"
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.cn.enableSNI
-  : "true"
   ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.cr.password
   : "{AES}m+8qijOdR7no6NEezlvF0w=="
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.pr.serverRedirectMax
   : "5"
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.hostnameVerifier
-  : org.apache.http.conn.ssl.DefaultHostnameVerifier
-  ? iscloudstreamsconnectorservice.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..operations..actions:getME.virtualServiceName
-  : WmCloudStreams.RestVS
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.expireTimeout
+  : "1000"
   ? iscloudstreamsconnectorservice.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..operations..actions:getPRICE.connectionAlias
   : $connectionAlias
   ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.cn.connectTimeout
   : "30000"
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.pr.useChunking
-  : "false"
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cr.preemptiveAuthEnabled
   : "false"
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.pr.userAgent
@@ -225,36 +203,18 @@ configurationVariables:
   : "8192"
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.pr.serverRedirectMax
   : "5"
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.maximumPoolSize
-  : "10"
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.expireTimeout
-  : "1000"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.cr.authSchemeType
+  : none
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.retryIfRequestSentOk
   : "true"
   ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.cn.connectTimeout
   : "30000"
   ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.maximumPoolSize
   : "10"
-  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.poolIncrementSize
-  : "1"
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cr.authSchemeType
-  : none
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.pr.httpContentCharSet
-  : ISO-8859-1
-  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.cn.tcpNoDelay
-  : "false"
-  ? iscloudstreamsconnectorservice.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..operations..actions:getTIME.connectionAlias
-  : $connectionAlias
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.sessionExpiry
   : "14"
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.cn.connectTimeout
-  : "180000"
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.retryCount
-  : "3"
   ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.timeoutType
   : none
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.validateAfterInactivity
-  : "1000"
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.cn.idleTimeout
   : "-1"
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.pr.httpContentCharSet
@@ -263,16 +223,10 @@ configurationVariables:
   : "30000"
   ? iscloudstreamsconnectorservice.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..operations..actions:getHISTORY.connectionAlias
   : $connectionAlias
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.poolIncrementSize
-  : "1"
   ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.cn.tcpNoDelay
   : "false"
-  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.poolable
-  : "true"
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.cr.preemptiveAuthEnabled
   : "false"
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.cn.retryCount
-  : "3"
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.startupRetryCount
   : "0"
   ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.cn.enableCompression
@@ -283,55 +237,31 @@ configurationVariables:
   : "false"
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.sessionExpiry
   : "14"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.cr.password
+  : "{AES}R5Iq6pnpnguk3lcihpz5nw=="
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.startupBackoffSecs
   : "10"
-  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.cn.socketLinger
-  : "-1"
   ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.cr.preemptiveAuthEnabled
   : "false"
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.cn.reuseAddr
   : "false"
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.pr.useExpectCont
-  : "false"
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.pr.followServerRedirects
-  : "true"
-  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.cn.readTimeout
-  : "30000"
-  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.minimumPoolSize
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.cn.keepAliveInterval
+  : "-1"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.poolIncrementSize
   : "1"
-  ? iscloudstreamsconnectorservice.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..operations..actions:getME.connectionAlias
-  : $connectionAlias
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.cn.socketStaleCheck
+  : "true"
   ? iscloudstreamsconnectorservice.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..operations..actions:TestAction5.virtualServiceName
   : WmCloudStreams.SoapVS
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.cn.providerUrl
   : https://login.salesforce.com/services/Soap/u/53.0
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.cn.socketStaleCheck
-  : "true"
-  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.cr.authSchemeType
-  : none
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.pr.protocolVersion
-  : HTTP/1.1
   ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.cn.keepAliveInterval
   : "-1"
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.cn.sockBuffSize
   : "8192"
-  ? iscloudstreamsconnectorservice.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..operations..actions:getTIME.virtualServiceName
-  : WmCloudStreams.RestVS
   ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.expireTimeout
   : "1000"
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.pr.allowCircularRedirects
-  : "true"
-  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.cn.hostnameVerifier
-  : org.apache.http.conn.ssl.DefaultHostnameVerifier
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.rh.requestHeaderNames
-  : "Content-Type,SOAPAction"
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.connectionEnabled
-  : "true"
-  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.cr.authSchemeType
-  : none
-  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.cn.enableSNI
-  : "true"
-  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.cn.socketStaleCheck
   : "true"
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.connectionEnabled
   : "true"
@@ -339,24 +269,14 @@ configurationVariables:
   : "true"
   ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.poolable
   : "true"
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cr.password
-  : "{AES}OYSjbNfOLUKJAT+MWJt0w3FPbUooYAcCzhGF0UMKgsfxDQ1MMLJvU+e5tmiaXP+/"
-  ? iscloudstreamsconnectorservice.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..operations..actions:TestAction8.virtualServiceName
-  : WmCloudStreams.SoapVS
-  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.poolIncrementSize
-  : "1"
   ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.startupRetryCount
   : "0"
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.pr.followServerRedirects
-  : "true"
   ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.cn.idleTimeout
   : "-1"
   ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.cn.socketLinger
   : "-1"
-  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.cn.providerUrl
-  : https://api.uber.com/v1
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.socketStaleCheck
-  : "true"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.cn.sockBuffSize
+  : "8192"
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.keepAliveInterval
   : "300000"
   ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.maximumPoolSize
@@ -367,8 +287,6 @@ configurationVariables:
   : "Content-Type,SOAPAction"
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cr.username
   : rithi@softwareag.com
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.readTimeout
-  : "180000"
   ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.blockTimeout
   : "1000"
   ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.cn.keepAliveInterval
@@ -379,60 +297,36 @@ configurationVariables:
   : "1000"
   ? iscloudstreamsconnectorservice.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..operations..actions:getHISTORY.virtualServiceName
   : WmCloudStreams.RestVS
-  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.cn.retryCount
-  : "1"
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.tcpNoDelay
-  : "false"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.cn.socketLinger
+  : "-1"
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.cr.authSchemeType
   : none
   ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.cn.idleTimeout
   : "-1"
-  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.cr.password
-  : "{AES}LrsLBMWpXE1xq4Tc9qyiVw=="
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.cn.retryCount
+  : "1"
   ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.cn.validateAfterInactivity
   : "1000"
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.rh.requestHeaderValues
-  : "text/xml,login"
   ? iscloudstreamsconnectorservice.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..operations..actions:TestAction1.connectionAlias
   : project.man01sabreen.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.connections:TestSF1
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.cn.readTimeout
   : "180000"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.cn.connectTimeout
+  : "30000"
   ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.startupBackoffSecs
   : "10"
   ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.timeoutType
   : none
-  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.startupBackoffSecs
-  : "10"
-  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.cn.enableCompression
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.cr.preemptiveAuthEnabled
   : "false"
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.minimumPoolSize
-  : "1"
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.cr.password
-  : "{AES}OYSjbNfOLUKJAT+MWJt0w3FPbUooYAcCzhGF0UMKgsfxDQ1MMLJvU+e5tmiaXP+/"
-  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.cn.enableSNI
-  : "true"
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.providerUrl
-  : https://login.salesforce.com/services/Soap/u/53.0
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.connectTimeout
-  : "180000"
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.timeoutType
   : fixed
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.pr.useChunking
-  : "false"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.cn.retryIfRequestSentOk
+  : "true"
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.pr.userAgent
   : Cloudstreams
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.cn.enableCompression
-  : "false"
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.enableCompression
-  : "false"
-  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.cn.retryCount
-  : "1"
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.cr.username
   : rithi@softwareag.com
-  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.cn.providerUrl
-  : https://api.uber.com/v1
-  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.sockBuffSize
-  : "8192"
   ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.startupRetryCount
   : "0"
   ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.cn.sockBuffSize
@@ -447,3 +341,181 @@ configurationVariables:
   : "10"
   ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.cr.preemptiveAuthEnabled
   : "false"
+  ? iscloudstreamsconnectorservice.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..operations..actions:TestAction1.virtualServiceName
+  : WmCloudStreams.SoapVS
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.minimumPoolSize
+  : "1"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.cn.socketLinger
+  : "-1"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.cn.reuseAddr
+  : "false"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.connectionEnabled
+  : "true"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.cn.hostnameVerifier
+  : org.apache.http.conn.ssl.DefaultHostnameVerifier
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.blockTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.cn.retryIfRequestSentOk
+  : "true"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.connectionEnabled
+  : "true"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.poolIncrementSize
+  : "1"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.cn.validateAfterInactivity
+  : "1000"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.startupBackoffSecs
+  : "10"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.cr.username
+  : asa
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.cr.username
+  : sds
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.connectionEnabled
+  : "true"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.cn.reuseAddr
+  : "false"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.expireTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.cn.keepAliveInterval
+  : "300000"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.cn.validateAfterInactivity
+  : "1000"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.rh.requestHeaderValues
+  : "text/xml,login"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.cn.hostnameVerifier
+  : org.apache.http.conn.ssl.DefaultHostnameVerifier
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.minimumPoolSize
+  : "1"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.cn.reuseAddr
+  : "false"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.cn.enableSNI
+  : "true"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.hostnameVerifier
+  : org.apache.http.conn.ssl.DefaultHostnameVerifier
+  ? iscloudstreamsconnectorservice.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..operations..actions:getME.virtualServiceName
+  : WmCloudStreams.RestVS
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.pr.useChunking
+  : "false"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.maximumPoolSize
+  : "10"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.expireTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.poolIncrementSize
+  : "1"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.cn.enableSNI
+  : "true"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cr.authSchemeType
+  : none
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.pr.httpContentCharSet
+  : ISO-8859-1
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.cn.tcpNoDelay
+  : "false"
+  ? iscloudstreamsconnectorservice.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..operations..actions:getTIME.connectionAlias
+  : $connectionAlias
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.cn.connectTimeout
+  : "180000"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.retryCount
+  : "3"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.validateAfterInactivity
+  : "1000"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.poolIncrementSize
+  : "1"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.cr.username
+  : assa
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.poolable
+  : "true"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.cn.retryCount
+  : "3"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.startupBackoffSecs
+  : "10"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.cn.socketLinger
+  : "-1"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.blockTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.pr.useExpectCont
+  : "false"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.pr.followServerRedirects
+  : "true"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.startupRetryCount
+  : "0"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.cn.readTimeout
+  : "30000"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.minimumPoolSize
+  : "1"
+  ? iscloudstreamsconnectorservice.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..operations..actions:getME.connectionAlias
+  : $connectionAlias
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.cn.socketStaleCheck
+  : "true"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.cr.authSchemeType
+  : none
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.pr.protocolVersion
+  : HTTP/1.1
+  ? iscloudstreamsconnectorservice.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..operations..actions:getTIME.virtualServiceName
+  : WmCloudStreams.RestVS
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.pr.allowCircularRedirects
+  : "true"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.cn.hostnameVerifier
+  : org.apache.http.conn.ssl.DefaultHostnameVerifier
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.rh.requestHeaderNames
+  : "Content-Type,SOAPAction"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.cr.authSchemeType
+  : none
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.cn.enableSNI
+  : "true"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.cn.socketStaleCheck
+  : "true"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cr.password
+  : "{AES}OYSjbNfOLUKJAT+MWJt0w3FPbUooYAcCzhGF0UMKgsfxDQ1MMLJvU+e5tmiaXP+/"
+  ? iscloudstreamsconnectorservice.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..operations..actions:TestAction8.virtualServiceName
+  : WmCloudStreams.SoapVS
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.cn.enableCompression
+  : "false"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.poolIncrementSize
+  : "1"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.pr.followServerRedirects
+  : "true"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.cn.providerUrl
+  : https://api.uber.com/v1
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.cn.tcpNoDelay
+  : "false"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.socketStaleCheck
+  : "true"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.readTimeout
+  : "180000"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.cn.readTimeout
+  : "30000"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.cn.retryCount
+  : "1"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.tcpNoDelay
+  : "false"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.cr.password
+  : "{AES}LrsLBMWpXE1xq4Tc9qyiVw=="
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.rh.requestHeaderValues
+  : "text/xml,login"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.startupBackoffSecs
+  : "10"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.cn.enableCompression
+  : "false"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.minimumPoolSize
+  : "1"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.cr.password
+  : "{AES}OYSjbNfOLUKJAT+MWJt0w3FPbUooYAcCzhGF0UMKgsfxDQ1MMLJvU+e5tmiaXP+/"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.cn.enableSNI
+  : "true"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.providerUrl
+  : https://login.salesforce.com/services/Soap/u/53.0
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.connectTimeout
+  : "180000"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.pr.useChunking
+  : "false"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.cn.enableCompression
+  : "false"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.enableCompression
+  : "false"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.cn.retryCount
+  : "1"
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC1.cn.providerUrl
+  : https://api.uber.com/v1
+  ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.cn.validateAfterInactivity
+  : "1000"
+  ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.sockBuffSize
+  : "8192"
