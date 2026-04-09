@@ -6,24 +6,30 @@
   <value name="system_package">no</value>
   <value name="version">1.0</value>
   <value name="name">Man01SabreenProject</value>
-  <null name="startup_services"/>
-  <null name="shutdown_services"/>
+  <record name="startup_services" javaclass="com.wm.util.Values">
+    <null name="wm.cloudstreams.man01sabreen.Man01SabreenProject.plm:registerProvider"/>
+  </record>
+  <record name="shutdown_services" javaclass="com.wm.util.Values">
+    <null name="wm.cloudstreams.man01sabreen.Man01SabreenProject.plm:unregisterProvider"/>
+  </record>
   <null name="replication_services"/>
   <record name="requires" javaclass="com.wm.util.Values">
     <value name="Punith_KMAT_Salesforce_Sync">1.0</value>
     <value name="WmSalesforceProvider">12.0.0.0.17</value>
+    <value name="WmCloudStreams">12.1.0</value>
   </record>
   <null name="lazy_load_node_types"/>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">24</value>
+  <value name="build">25</value>
   <null name="description"/>
   <value name="created_date">25-03-2026 19:08:09 GMT</value>
   <null name="extendedProperties"/>
   <null name="target_server_version"/>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2026-04-09T08:36:54.467193518Z</value>
+  <value name="lastUpdated">2026-04-09T08:39:19.816926759Z</value>
   <value name="wmProjectId">flacc3d82af9da4f95a9d32e0e0c7da089</value>
   <value name="creator">Sabreen Irfana</value>
+  <null name="publisher"/>
 </Values>
