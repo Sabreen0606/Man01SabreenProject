@@ -158,6 +158,18 @@ services:
     version: "1.0"
   - name: WmSalesforceProvider
     version: 12.0.0.0.17
+- serviceName: project.man01sabreen.soap.connections:TestS1
+  packages:
+  - name: Man01SabreenProject
+    version: "1.0"
+  - name: WmCloudStreams
+    version: 12.1.0.0.43
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: Punith_KMAT_Salesforce_Sync
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
 - serviceName: project.man01sabreen.soap.connectors.TestNVC1_.connectors:NumberConversionSoapType_NumberToDollars
   packages:
   - name: Man01SabreenProject
@@ -377,6 +389,8 @@ configurationVariables:
   : "false"
   ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRc3.cn.sockBuffSize
   : "8192"
+  ? iscloudstreamsconnectorservice.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_rest_bulk_salesforce_v53..operations..actions:TestActionB1.virtualServiceName
+  : WmCloudStreams.RestVS
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSF1.cn.keepAliveInterval
   : "300000"
   ? cloudstreamsconnection.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..connections:TestRC2.maximumPoolSize
@@ -589,6 +603,8 @@ configurationVariables:
   : "1"
   ? iscloudstreamsconnectorservice.project..man01sabreen..Man01SabreenProject..project_man01sabreen_Man01SabreenProject_UberRest1..operations..actions:getME.connectionAlias
   : $connectionAlias
+  ? iscloudstreamsconnectorservice.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_rest_bulk_salesforce_v53..operations..actions:TestActionB1.connectionAlias
+  : project.man01sabreen.WmSalesforceProvider.com_webmethods_cloudstreams_rest_bulk_salesforce_v53.connections:TestBC1
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_rest_bulk_salesforce_v53..connections:TestBC1.cn.enableSNI
   : "true"
   ? cloudstreamsconnection.project..man01sabreen..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSC3.cn.socketStaleCheck
