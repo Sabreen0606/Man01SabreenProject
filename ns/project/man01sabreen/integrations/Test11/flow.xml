@@ -114,4 +114,8 @@
 </MAPSET>
 </MAP>
 </INVOKE>
+
+<INVOKE NAME="Invoke predefined:com.webmethods.cloudstreams.salesforce_v53" TIMEOUT="" SERVICE="project.man01sabreen.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.operations.actions:TestAction4" VALIDATE-IN="" VALIDATE-OUT="">
+  <COMMENT></COMMENT>
+</INVOKE>
 </FLOW>
