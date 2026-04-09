@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">connectorAccount</value>
+  <value name="node_subtype">ftpAccount</value>
+  <value name="node_nsName">project.man01sabreen.ftp.connections:TestF1</value>
+  <value name="node_pkg">Man01SabreenProject</value>
+  <value name="is_public">false</value>
+  <record name="accountDetails" javaclass="com.wm.util.Values">
+    <null name="agentGroup"/>
+    <value name="agentId">ac48282001a84a6192a6e990cb3e70d1</value>
+    <value name="connectionName">TestF1</value>
+    <value name="connectionType">sagcloud</value>
+    <value name="connectorID">ftpconnector</value>
+    <value name="connectorType">ftp</value>
+    <value name="description"></value>
+    <null name="instanceId"/>
+    <value name="password">*****</value>
+    <value name="projectName">Man01Sabreen</value>
+    <value name="providerName">TechnologyConnector</value>
+    <value name="securedata">false</value>
+    <value name="serverhost">demo.wftpserver.com</value>
+    <value name="serverport">21</value>
+    <value name="sslconfig">false</value>
+    <value name="timeout">60</value>
+    <value name="username">demo</value>
+    <value name="passwordhandle">wm.is.admin.project.man01sabreen.ftp.connections:TestF1</value>
+  </record>
+  <value name="assetId">Man01SabreenProject.project.man01sabreen.ftp.connections:TestF1</value>
+</Values>
