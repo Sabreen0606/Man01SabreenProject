@@ -170,6 +170,18 @@ services:
     version: "1.0"
   - name: WmSalesforceProvider
     version: 12.0.0.0.17
+- serviceName: project.man01sabreen.soap.connections:TestSaa1
+  packages:
+  - name: Man01SabreenProject
+    version: "1.0"
+  - name: WmCloudStreams
+    version: 12.1.0.0.43
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: Punith_KMAT_Salesforce_Sync
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
 - serviceName: project.man01sabreen.soap.connectors.TestNVC1_.connectors:NumberConversionSoapType_NumberToDollars
   packages:
   - name: Man01SabreenProject
