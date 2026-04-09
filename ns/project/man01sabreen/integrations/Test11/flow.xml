@@ -115,11 +115,11 @@
 </MAP>
 </INVOKE>
 
-<INVOKE NAME="Invoke predefined:com.webmethods.cloudstreams.salesforce_v53" TIMEOUT="" SERVICE="project.man01sabreen.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.operations.actions:TestAction8" VALIDATE-IN="" VALIDATE-OUT="">
+<INVOKE NAME="Invoke predefined:com.webmethods.cloudstreams.salesforce_v53" TIMEOUT="" SERVICE="project.man01sabreen.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.operations.actions:TestAction8" VALIDATE-IN="" VALIDATE-OUT="" DISABLED="true">
   <COMMENT></COMMENT>
 </INVOKE>
 
-<INVOKE NAME="Invoke predefined:project.man01sabreen.Man01SabreenProject.UberRest1" TIMEOUT="" SERVICE="project.man01sabreen.Man01SabreenProject.project_man01sabreen_Man01SabreenProject_UberRest1.operations.actions:TestActionR1" VALIDATE-IN="" VALIDATE-OUT="">
+<INVOKE NAME="Invoke predefined:project.man01sabreen.Man01SabreenProject.UberRest1" TIMEOUT="" SERVICE="project.man01sabreen.Man01SabreenProject.project_man01sabreen_Man01SabreenProject_UberRest1.operations.actions:TestActionR1" VALIDATE-IN="" VALIDATE-OUT="" DISABLED="true">
   <COMMENT></COMMENT>
 
   <!-- nodes -->
